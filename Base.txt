@@ -1,0 +1,5 @@
+practica1
+Id int 
+Nombres var
+Correo var
+Nacionalidad var
