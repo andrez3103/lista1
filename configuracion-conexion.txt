@@ -1,0 +1,23 @@
+package configuracion;
+
+import javax.sql.DataSource;
+import org.springframework.jdbc.datasource.DriverManagerDataSource;
+
+public class conexion {
+
+    public DataSource Conectar;
+    
+    public DriverManagerDataSource Conectar()
+    {
+        //instanciamos driver manager
+        DriverManagerDataSource dataSource= new DriverManagerDataSource();
+        dataSource.setDriverClassName("com.mysql.jdbc.Driver");
+        dataSource.setUrl("jdbc:mysql://localhost:3307/practica1");
+        dataSource.setUsername("root");
+        dataSource.setPassword("");
+        return dataSource;
+
+   
+    }
+    
+}
